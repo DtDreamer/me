@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-gradient-slow: gradient-shift 15s ease infinite;
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px) translateX(0px);
+      opacity: 0.2;
+    }
+    50% {
+      transform: translateY(-20px) translateX(10px);
+      opacity: 0.5;
+    }
+  }
+
+  @keyframes gradient-shift {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+}
+
+.bg-animated-gradient {
+  background-size: 200% 200%;
+}
