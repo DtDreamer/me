@@ -198,7 +198,7 @@ const ServiceCard = ({ icon, title, desc }) => (
 
 const TimelineItem = ({ year, role, place }) => (
   <li className="relative pl-8 border-l-2 border-blue-500/30">
-    <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.5)]"></div>
+    <div className="absolute-left-[9px] top-0 w-4 h-4 rounded-full bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.5)]"></div>
     <span className="text-sm font-bold text-blue-400">{year}</span>
     <h4 className="text-lg font-bold">{role}</h4>
     <p className="text-slate-400">{place}</p>
